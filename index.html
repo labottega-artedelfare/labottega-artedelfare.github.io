@@ -3,206 +3,67 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>La Bottega – Arte del Fare | Cultura e formazione gestaltica</title>
+    <title>La Bottega – Arte del Fare</title>
     <meta
       name="description"
-      content="La Bottega – Arte del Fare presenta attività culturali e formative legate alla tradizione gestaltica e il programma sostenitori."
+      content="La Bottega – Arte del Fare: cultura e formazione gestaltica."
     >
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/config.js" defer></script>
-    <script src="assets/js/content.js" defer></script>
     <script src="assets/js/main.js" defer></script>
   </head>
-  <body>
+  <body class="home-page">
     <a class="skip-link" href="#contenuto">Salta al contenuto</a>
 
-    <header class="site-header" aria-label="Intestazione">
-      <div class="site-header__inner">
-        <a class="brand" href="#inizio" aria-label="La Bottega – Arte del Fare">
-          <img
-            class="brand__mark"
-            src="assets/images/logo-orizzontale.png"
-            alt="La Bottega – Arte del Fare"
-            width="300"
-            height="100"
-          >
+    <main class="link-hub" id="contenuto">
+      <header class="link-hub__header">
+        <img
+          class="link-hub__logo"
+          src="assets/images/logo-circolare.png"
+          alt="Logo di La Bottega – Arte del Fare"
+          width="180"
+          height="180"
+        >
+        <p class="link-hub__kicker">Cultura e formazione gestaltica</p>
+        <h1>La Bottega</h1>
+        <p class="link-hub__subtitle">Arte del Fare</p>
+        <p class="link-hub__intro">
+          Un luogo di esperienza, pratica e trasmissione della tradizione gestaltica.
+        </p>
+      </header>
+
+      <nav class="link-stack" aria-label="Collegamenti principali">
+        <a class="hub-link hub-link--primary" data-link="website" href="#">
+          <span>Visita il sito</span>
+          <span class="hub-link__mark" aria-hidden="true">↗</span>
         </a>
+        <a class="hub-link" href="sostenitori.html">
+          <span>Programma sostenitori</span>
+          <span class="hub-link__mark" aria-hidden="true">→</span>
+        </a>
+        <a class="hub-link" data-link="instagram" href="#">
+          <span>Instagram</span>
+          <span class="hub-link__mark" aria-hidden="true">↗</span>
+        </a>
+        <a class="hub-link" data-link="youtube" href="#">
+          <span>YouTube</span>
+          <span class="hub-link__mark" aria-hidden="true">↗</span>
+        </a>
+        <a class="hub-link" data-link="facebook" href="#">
+          <span>Facebook</span>
+          <span class="hub-link__mark" aria-hidden="true">↗</span>
+        </a>
+        <a class="hub-link" data-link="email" href="#">
+          <span>Scrivici</span>
+          <span class="hub-link__mark" aria-hidden="true">→</span>
+        </a>
+      </nav>
 
-        <nav class="site-nav" aria-label="Navigazione principale">
-          <a href="#bottega">La Bottega</a>
-          <a href="#collegamenti">Collegamenti</a>
-          <a href="#sostenitori">Sostenitori</a>
-          <a class="nav-cta" href="#sostenitori">Programma sostenitori</a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="contenuto">
-      <section class="hero section-pad" id="inizio" aria-labelledby="hero-title">
-        <div class="hero__content">
-          <p class="eyebrow" data-content="hero-eyebrow">Cultura e formazione gestaltica</p>
-          <h1 id="hero-title" data-content="hero-title">La Bottega – Arte del Fare</h1>
-          <p class="hero__subtitle">Cultura e formazione gestaltica</p>
-          <p class="hero__intro" data-content="hero-introduction">
-            La Bottega è un luogo di esperienza, terapia, filosofia e trasmissione della tradizione gestaltica.
-          </p>
-          <div class="hero__actions" aria-label="Azioni principali">
-            <a class="button button--primary" href="#bottega">Scopri la Bottega</a>
-            <a class="button button--secondary" href="#sostenitori">Diventa sostenitore</a>
-          </div>
-        </div>
-
-        <div class="hero__brand" aria-hidden="true">
-          <img
-            src="assets/images/logo-orizzontale.png"
-            alt=""
-            width="560"
-            height="187"
-          >
-        </div>
-      </section>
-
-      <section class="section-pad editorial" id="bottega" aria-labelledby="bottega-title">
-        <div class="section-heading">
-          <p class="eyebrow">La Bottega</p>
-          <h2 id="bottega-title">Un luogo di esperienza e trasmissione</h2>
-        </div>
-        <div class="editorial__text">
-          <p data-content="presentation">
-            La Bottega è un luogo di esperienza, terapia, filosofia e trasmissione della tradizione gestaltica.
-          </p>
-          <a class="text-link" data-link="website" href="https://www.mimmociavarelli.com/" target="_blank" rel="noopener noreferrer">
-            Vai al sito principale
-          </a>
-        </div>
-      </section>
-
-      <section class="section-pad public-links" id="collegamenti" aria-labelledby="links-title">
-        <div class="section-heading">
-          <p class="eyebrow">Collegamenti pubblici</p>
-          <h2 id="links-title">Canali e contatti</h2>
-        </div>
-        <ul class="link-list" data-public-links></ul>
-      </section>
-
-      <section class="section-pad supporters" id="sostenitori" aria-labelledby="supporters-title">
-        <div class="supporters__intro">
-          <div class="section-heading">
-            <p class="eyebrow">Programma sostenitori</p>
-            <h2 id="supporters-title" data-content="supporters-title">Programma sostenitori</h2>
-          </div>
-          <p data-content="supporters-description">
-            Un modo per sostenere le attività della Bottega e partecipare alla crescita della sua comunità.
-          </p>
-        </div>
-
-        <div class="supporter-tiers" data-supporter-tiers></div>
-      </section>
-
-      <section class="section-pad process" id="come-funziona" aria-labelledby="process-title">
-        <div class="section-heading">
-          <p class="eyebrow">Come funziona</p>
-          <h2 id="process-title">Dal contatto al badge annuale</h2>
-        </div>
-        <ol class="process-list">
-          <li>
-            <span>01</span>
-            <div>
-              <h3>Registrazione</h3>
-              <p>La richiesta viene raccolta quando il modulo dedicato sarà disponibile.</p>
-            </div>
-          </li>
-          <li>
-            <span>02</span>
-            <div>
-              <h3>Indicazioni per la donazione</h3>
-              <p>Chi si registra riceve le informazioni necessarie per procedere con una donazione volontaria.</p>
-            </div>
-          </li>
-          <li>
-            <span>03</span>
-            <div>
-              <h3>Verifica manuale</h3>
-              <p>Il bonifico viene verificato manualmente prima dell'approvazione della qualifica.</p>
-            </div>
-          </li>
-          <li>
-            <span>04</span>
-            <div>
-              <h3>Approvazione</h3>
-              <p>La qualifica viene assegnata in coerenza con il profilo e lo spirito del programma.</p>
-            </div>
-          </li>
-          <li>
-            <span>05</span>
-            <div>
-              <h3>Badge annuale</h3>
-              <p>Il badge collegato alla qualifica viene rilasciato dopo la verifica della donazione.</p>
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      <section class="section-pad badge" aria-labelledby="badge-title">
-        <div class="badge__symbol" aria-hidden="true">
-          <img src="assets/images/logo-circolare.png" alt="" width="180" height="180">
-        </div>
-        <div>
-          <p class="eyebrow">Badge annuale</p>
-          <h2 id="badge-title">Un riconoscimento collegato alla qualifica</h2>
-          <p>
-            Il badge ha durata <span data-content="badge-duration">annuale</span>, è legato alla qualifica assegnata
-            e viene rilasciato dopo la verifica manuale della donazione.
-          </p>
-          <p class="badge__year">Validità <span data-content="badge-year">2026–2027</span></p>
-        </div>
-      </section>
-
-      <section class="final-cta section-pad" aria-labelledby="cta-title">
-        <p class="eyebrow">Partecipa</p>
-        <h2 id="cta-title">Registrazioni in apertura</h2>
-        <p>
-          Il modulo di registrazione non è ancora attivo. Per informazioni sul programma sostenitori puoi contattare
-          La Bottega via email.
-        </p>
-        <div class="final-cta__actions">
-          <span class="button button--disabled" aria-disabled="true" data-registration-state>
-            Registrazioni in apertura
-          </span>
-          <a class="button button--secondary" data-link="email" href="mailto:labottega.artedelfare@gmail.com">
-            Scrivi alla Bottega
-          </a>
-        </div>
-      </section>
+      <footer class="simple-footer">
+        <p>Fare è un modo di conoscere.</p>
+        <p><span data-current-year>2026</span> · La Bottega – Arte del Fare</p>
+      </footer>
     </main>
-
-    <footer class="site-footer">
-      <div class="site-footer__inner">
-        <div class="site-footer__brand">
-          <img
-            src="assets/images/logo-circolare.png"
-            alt="Logo circolare di La Bottega – Arte del Fare"
-            width="88"
-            height="88"
-          >
-          <div>
-            <p class="site-footer__name">La Bottega – Arte del Fare</p>
-            <p>Cultura e formazione gestaltica.</p>
-          </div>
-        </div>
-
-        <div class="site-footer__links">
-          <a data-link="email" href="mailto:labottega.artedelfare@gmail.com">labottega.artedelfare@gmail.com</a>
-          <a data-link="instagram" href="https://www.instagram.com/artedelfare.labottega/" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a data-link="facebook" href="https://www.facebook.com/profile.php?id=61582840887788&amp;locale=it_IT" target="_blank" rel="noopener noreferrer">Facebook</a>
-          <a data-link="youtube" href="https://www.youtube.com/@MimmoCiavarelli" target="_blank" rel="noopener noreferrer">YouTube</a>
-        </div>
-
-        <p class="site-footer__note">
-          <span data-current-year>2026</span> - Progetto culturale dedicato alla pratica e alla comunità gestaltica.
-        </p>
-      </div>
-    </footer>
   </body>
 </html>
